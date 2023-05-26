@@ -1,0 +1,40 @@
+body {
+    background-color: greenyellow;
+}
+
+.for-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5px;
+}
+
+.for-content {
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: #2b2d42;
+    width: auto;
+    height: 170px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+@media only screen and (max-width: 667px) {
+    body {
+        background-color: turquoise;
+    }
+    .for-box {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: auto;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        background-color: tomato;
+    }
+    .for-box {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: auto;
+    }
+}
